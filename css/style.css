@@ -1,0 +1,97 @@
+*{
+  margin: 0px;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{ font-family: 'Roboto', sans-serif;
+
+}
+
+section{
+  height: 650px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 40;
+  align-items: center;
+}
+
+section h2{
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+section li{
+  font-size: 15px;
+  margin-left: 15px;
+}
+
+section p{
+  font-weight: 300;
+  margin-bottom: 15px;
+  padding-left: 20px;
+
+}
+section a{
+  font-size: 14px;
+  margin-left: 20px;
+  display: inline-block;
+  padding: 7px;
+  color: #283773;
+  text-decoration: none;
+  width: 100px;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  background: #fff;
+
+}
+
+section img{
+  height: 60%;
+}
+
+section:nth-child(3){
+  background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);
+ 
+}
+section:nth-child(2){
+  
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+}
+section:nth-child(1){
+  background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+}
+
+@media screen and (max-width:1000px) {
+  section{
+    flex-direction: column-reverse;
+    
+  }
+  section > img{
+    height: 40%;
+  }
+
+  .contenedor-texto{
+    text-align: center;
+  }
+  
+}
+
+@media screen and (max-width:600px) {
+
+  section > img{
+    height: 25%;
+  }
+  
+}
+
+
+  
+
+
